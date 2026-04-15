@@ -25,7 +25,7 @@ sp500["Return"] = sp500["Close"].pct_change()
 # =========================
 # STEP 2: GET MACRO DATA
 # =========================
-fred = Fred(api_key="95457e4328a17f40f4d84fc26fd668b7")  # keep your key
+fred = Fred(api_key="YOUR_API_KEY")  # keep your key
 
 inflation = fred.get_series("CPIAUCSL")
 unemployment = fred.get_series("UNRATE")
